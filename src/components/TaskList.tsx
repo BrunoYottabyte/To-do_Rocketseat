@@ -17,7 +17,7 @@ export function TaskList() {
   function handleCreateNewTask() {
     if (!newTaskTitle) return alert('O título é obrigatório')
     setTasks([...tasks, {
-      id: Math.floor(Math.random() * 10),
+      id: Math.random(),
       title: newTaskTitle,
       isComplete: false
     }])
